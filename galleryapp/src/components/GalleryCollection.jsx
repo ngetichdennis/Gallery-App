@@ -3,7 +3,7 @@ import React,{useEffect,useState} from "react";
 function GalleryCollection({gallery}) {
     const[category, setCategory] = useState([]);
     const[snaps, setSnaps] = useState([]);
-    
+    const [filteredGallery, setFilteredGallery] = useState([]);
 
     //// map through gallery to get the categories and imgae
     useEffect(() => {
@@ -15,7 +15,14 @@ function GalleryCollection({gallery}) {
         });
     },[gallery])
     
-    ////add onClick
+    ///// onClick,filter to only have images that meet the condition,update the state;
+    function handleClick({snaps,cat}) {
+        alert("image")
+        const filt = snaps.filter((p) => {
+           return p.category === cat.name
+        });
+        setFilteredGallery(filt);
+    }
     
     return (
         /////// loop through categories and images

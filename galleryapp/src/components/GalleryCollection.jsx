@@ -33,6 +33,16 @@ function GalleryCollection({gallery}) {
                 return <div key={cat.id} onClick={() => handleClick({snaps,cat})} className="image-container" >
                     <img src={cat.image} alt="categories"/>
                     <h4>{cat.name}</h4>
+            </div>    
+            })}
+            </div>
+            <div className="all-images">
+            {filteredGallery.map((gal) => {
+                return <div key={gal.id} className="category-image">
+                    <img src={gal.image} alt="image"/>
+                    <h5>{gal.name}</h5>
+                    <p>{gal.description}</p>
+                    <p>Date added: {gal.date_added}</p>
                 </div>
             })}
             </div>

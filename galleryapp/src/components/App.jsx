@@ -1,9 +1,11 @@
-
+import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
 import {useEffect,useState} from "react"
 import SearchBar from "./SearchBar";
 import SignUp from "./SignUp";
 import GalleryCollection from "./GalleryCollection";
 import AddForm from "./AddForm";
+import NavBar from "./NavBar";
+import Home from "./Home";
 
 function App(){
     ///gallery contains the images
@@ -28,14 +30,19 @@ function App(){
     },[])
 
     return(
+        <Router>
         <div>
-            <h1>Gallery App</h1>
-            <SearchBar/>
-            <SignUp />
-            <AddForm onAddImage ={handleAddImages} />
-            <GalleryCollection gallery={gallery}/>
-            <AddForm onAddImage ={handleAddImages} />
+            <h1>PixelHive</h1>
+            <NavBar gallery={gallery}/>
+            <Routes>
+               <Route exact path="/" element={<Home/>}/>
+            {/* <Route path="/search" element={<SearchBar/>}/> */}
+            <Route path="/signup" element={ <SignUp />}/>
+            <Route path='/form' element={<AddForm onAddImage ={handleAddImages} />}/>
+            <Route path="/gallery" element={[<SearchBar />, <GalleryCollection gallery={gallery} />]} />
+            </Routes>
         </div>
+        </Router>
 
     )
 

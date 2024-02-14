@@ -27,6 +27,7 @@ function AddForm({onAddImage}){
             placeholder="Name of the image"
             value={formData.name}
             onChange={handleChange}
+            className="add-form"
             />
             <input
             name="image"
@@ -34,6 +35,7 @@ function AddForm({onAddImage}){
             placeholder="Image URL"
             value={formData.image}
             onChange={handleChange}
+            className="add-form"
             />
             <input
             name="description"
@@ -41,14 +43,16 @@ function AddForm({onAddImage}){
             placeholder="Image Description"
             value={formData.description}
             onChange={handleChange}
+            className="add-form"
             />
             <input
             name="date_added"
             type="date"
             value={formData.date_added}
             onChange={handleChange}
+            className="add-form"
             />
-            <button type="submit">Add Image</button>
+            <button type="submit" className="add-form">Add Image</button>
         </form>
         </>
 

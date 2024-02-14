@@ -20,35 +20,35 @@ function AddForm({onAddImage}){
     return(
         <>
         <h2>Add a New Image</h2>
-        <form onSubmit={handleSubmit}>
-            <input
+        <form  onSubmit={handleSubmit}>
+            <input className="add-form"
             name="name"
             type="text"
             placeholder="Name of the image"
             value={formData.name}
             onChange={handleChange}
             />
-            <input
+            <input className="add-form"
             name="image"
             type="url"
             placeholder="Image URL"
             value={formData.image}
             onChange={handleChange}
             />
-            <input
+            <input className="add-form"
             name="description"
             type="text"
             placeholder="Image Description"
             value={formData.description}
             onChange={handleChange}
             />
-            <input
+            <input className="add-form"
             name="date_added"
             type="date"
             value={formData.date_added}
             onChange={handleChange}
             />
-            <button type="submit">Add Image</button>
+            <button className="add-form" type="submit">Add Image</button>
         </form>
         </>
 

@@ -28,8 +28,10 @@ function App(){
 
     return(
         <div>
-            <h1>Gallery App</h1>
+            <div className="header">
+            <h1 className="title">PixelHive</h1>
             <SignUp />
+            </div>
             <SearchBar/>
              <GalleryCollection gallery={gallery}/>
              <AddForm onAddImage ={handleAddImages} />

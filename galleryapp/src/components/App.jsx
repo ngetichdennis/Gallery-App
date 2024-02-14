@@ -15,7 +15,7 @@ function App(){
         <div>
             <h1>Gallery App</h1>
             <SearchBar/>
-            <AddForm onSubmit ={handleAddImages} />
+            <AddForm onAddImage ={handleAddImages} />
         </div>
 
     )

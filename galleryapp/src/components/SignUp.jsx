@@ -29,4 +29,11 @@ const SignUp = () => {
 
     return errors;
   };
+
+  // Handle sign up form submission
+  const handleSignUp = (values, actions) => {
+    // Sign up logic
+    console.log('Signing up with:', values);
+    actions.resetForm();
+  };
 }

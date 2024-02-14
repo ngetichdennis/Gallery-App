@@ -36,4 +36,12 @@ const SignUp = () => {
     console.log('Signing up with:', values);
     actions.resetForm();
   };
+
+  // Handle sign in form submission
+  const handleSignIn = (values, actions) => {
+    // Sign in logic
+    console.log('Signing in with:', values);
+    actions.resetForm();
+  };
 }
+

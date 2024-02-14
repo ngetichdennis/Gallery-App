@@ -1,6 +1,5 @@
 function SearchBar(){
     return(
-        <></>
 
     )
 }

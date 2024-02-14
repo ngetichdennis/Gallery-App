@@ -1,0 +1,30 @@
+/* categories */
+.category-header {
+    text-align: center;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.image-container img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* images */
+.all-images {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 25px
+}
+.category-image img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}

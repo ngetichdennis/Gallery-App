@@ -46,7 +46,7 @@ const SignUp = () => {
 
   // Return formik
   return (
-    <Box maxW="400px" m="auto">
+    < Box maxW="400px" m="auto">
       <h2>{isSignIn ? 'Sign In' : 'Sign Up'}</h2>
       <Formik
         initialValues={initialValues}
@@ -76,7 +76,19 @@ const SignUp = () => {
           </Form>
         )}
       </Formik>
-      </Box>
-  )}
+
+      {/* Toggle between sign in and sign up mode */}
+      <p onClick={() => setIsSignIn(!isSignIn)}>
+        {isSignIn ? 'Don\'t have an account? Sign Up' : 'Already have an account? Sign In'}
+      </p>
+    </Box>
+  );
+};
+
+export default SignUp;
+
+      
+      
+  
 
 

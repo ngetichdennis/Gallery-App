@@ -1,0 +1,16 @@
+/* categories */
+.category-header {
+    text-align: center;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.image-container img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}

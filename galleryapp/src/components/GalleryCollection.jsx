@@ -17,7 +17,6 @@ function GalleryCollection({gallery}) {
     
     ///// onClick,filter to only have images that meet the condition,update the state;
     function handleClick({snaps,cat}) {
-        alert("image")
         const filt = snaps.filter((p) => {
            return p.category === cat.name
         });

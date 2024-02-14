@@ -14,3 +14,17 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* images */
+.all-images {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 25px
+}
+.category-image img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}

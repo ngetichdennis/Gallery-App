@@ -1,5 +1,5 @@
 import React from 'react';
-import { useColorMode, Switch, Button } from '@chakra-ui/react';
+import { useColorMode, Switch } from '@chakra-ui/react';
 
 const ThemeToggle = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -16,16 +16,12 @@ const ThemeToggle = () => {
         colorScheme="teal"
         isChecked={colorMode === 'dark'}
         onChange={toggleColorMode}
+        marginLeft={1230}
       />
-      {/* Button to toggle light mode specifically */}
-      <Button onClick={handleToggleMode} ml={3}>
-        {colorMode === 'dark' ? 'Light' : 'Dark'} Mode
-      </Button>
     </div>
   );
 };
 
 export default ThemeToggle;
-
 
 

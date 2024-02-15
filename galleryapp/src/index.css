@@ -1,3 +1,51 @@
+/*Global */
+/*body{
+    background-color: rgb(219, 155, 72);
+
+
+}*/
+/*Home Page*/
+/* .Theme{
+    margin-right: 80%;
+} */
+.Home_title{
+    font-size: 3rem;
+    padding: 17rem;
+    margin-left: 12%;
+}
+.AppTitle{
+    font-size: 3rem;
+    text-align: center;
+    
+}
+.Home_page{
+    background-image: url("https://plus.unsplash.com/premium_photo-1706480229136-07d0cc7287bd?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    height: 85vh;
+    padding: 4rem;
+    color: black;
+    background-size: cover;
+    background-position: center; 
+}
+/*Home Page text*/
+.Home_text{
+    font-size: 1.6rem;
+}
+/*form*/
+.add-form {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*NavBar*/
+.Nav{
+    margin-right: 30px;
+}
+
+.NavBar{
+    margin-left: 70%;
+    margin-bottom: 1.5rem;
+}
 /* categories */
 .category-header {
     text-align: center;

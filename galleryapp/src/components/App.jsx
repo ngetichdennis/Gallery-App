@@ -1,23 +1,26 @@
 import {BrowserRouter as Router,Route,Routes} from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
 import {useEffect,useState} from "react"
-import SearchBar from "./SearchBar";
+// import SearchBar from "./SearchBar";
 import SignUp from "./SignUp";
 import GalleryCollection from "./GalleryCollection";
-import AddForm from "./AddForm";
+// import AddForm from "./AddForm";
 import NavBar from "./NavBar";
 import Home from "./Home";
+import ThemeToggle from "./ThemeToggle";
+
 
 function App(){
     ///gallery contains the images
     const [gallery,setGallery] = useState([]);
-    const [images,setImages]= useState([]);
+    // const [images,setImages]= useState([]);
     //handle adding new images to the state
-    function handleAddImages(images){
-        //new images declaration
-        const imagesAdded={...images}
-        //adding new state to the existing state
-        setImages([...images,imagesAdded]);
-    }
+    // function handleAddImages(images){
+    //     //new images declaration
+    //     const imagesAdded={...images}
+    //     //adding new state to the existing state
+    //     setImages([...images,imagesAdded]);
+    // }
     
     useEffect(() => {
         fetch(" http://localhost:3000/Gallery")
@@ -30,19 +33,22 @@ function App(){
     },[])
 
     return(
+        <ChakraProvider>
         <Router>
         <div>
-            <h1>PixelHive</h1>
+            <h1 className="AppTitle"><strong>Pixel Hive</strong></h1>
+            <ThemeToggle />
             <NavBar gallery={gallery}/>
             <Routes>
-               <Route exact path="/" element={<Home/>}/>
+               <Route exact path="/" element={<Home key={"home"}/>}/>
             {/* <Route path="/search" element={<SearchBar/>}/> */}
-            <Route path="/signup" element={ <SignUp />}/>
-            <Route path='/form' element={<AddForm onAddImage ={handleAddImages} />}/>
-            <Route path="/gallery" element={[<SearchBar />, <GalleryCollection gallery={gallery} />]} />
+            <Route path="/signup" element={ <SignUp key={"signup"} />}/>
+            {/* <Route path='/form' element={<AddForm onAddImage ={handleAddImages} />}/> */}
+            <Route path="/gallery" element={ <GalleryCollection gallery={gallery} key={"gallery"}/>} />
             </Routes>
         </div>
         </Router>
+        </ChakraProvider>
 
     )
 

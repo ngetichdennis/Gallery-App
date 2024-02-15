@@ -4,11 +4,11 @@ function NavBar(){
   
   return (
     <nav className="NavBar">
-    <NavLink exact to="/" activeClassName="active" className="Nav">Home</NavLink>
-    <NavLink to="/signup" activeClassName="active" className="Nav">Sign up</NavLink>
-    <NavLink to="/gallery" activeClassName="active" className="Nav">Gallery</NavLink>
+    <NavLink  to="/" activeclassname="active" className="Nav">Home</NavLink>
+    <NavLink to="/signup" activeclassname="active" className="Nav">Sign up</NavLink>
+    <NavLink to="/gallery" activeclassname="active" className="Nav">Gallery</NavLink>
     {/* <NavLink to="/search" activeClassName="active" className="Nav">Search</NavLink> */}
-    <NavLink to="/form" activeClassName="active" className="Nav">Add Image</NavLink>
+    {/* <NavLink to="/form" activeClassName="active" className="Nav">Add Image</NavLink> */}
 </nav>
   );
 };

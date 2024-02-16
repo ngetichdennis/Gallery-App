@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { v4 as generateUniqueId } from 'uuid';
+
 function AddForm({ onAddImage }) {
   //initial form data object with empty fields and current date as 'date_added' field
-  // const [addSnap,setSnap]=useState([])
+ 
   const [formData, setFormData] = useState({
     name: "",
     image: "",
@@ -14,16 +16,21 @@ function AddForm({ onAddImage }) {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   }
+  
+
   //Handling form submission
   function handleSubmit(event) {
     //preventing  default page refresh on submit
     event.preventDefault();
+    const id =  generateUniqueId();
+   
+    console.log('Generated ID:', id);
+
      //passing the form data to parent component for further processing
-     onAddImage({ ...formData, date_added: formData.date_added.toISOString().slice(0, 10) });
+     onAddImage({ id, ...formData, date_added: formData.date_added.toISOString().slice(0, 10) });
     
     //passing the form data to parent component for further processing
-    // onAddImage({ ...formData });
-    //reseting the form
+    
     setFormData({
       name: "",
       image: "",
@@ -32,12 +39,12 @@ function AddForm({ onAddImage }) {
       category:"",
     });
     //posting data to the server
-    fetch("http://localhost:3000/Gallery/images", {
+    fetch("http://localhost:3000/Gallery", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ...formData, date_added: formData.date_added.toISOString().slice(0, 10) }),
+      body: JSON.stringify({ id, ...formData, date_added: formData.date_added.toISOString().slice(0, 10) }),
     })
       .then((response) => response.json())
       .then((data) => {
@@ -48,6 +55,8 @@ function AddForm({ onAddImage }) {
    console.error("Error posting image", error);
       });
   }
+
+
 
   return (
     <>
@@ -96,6 +105,7 @@ function AddForm({ onAddImage }) {
           Add Image
         </button>
       </form>
+      {/* <ToastContainer /> Toast container for displaying toasts */}
     </>
   );
 }

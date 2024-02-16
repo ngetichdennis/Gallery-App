@@ -10,20 +10,26 @@ function GalleryCollection({ gallery }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
 
-  // Map through gallery to get the categories and images
+
   useEffect(() => {
     const categories = [];
     const images = [];
-
+  
     gallery.forEach((pic) => {
-      categories.push(...pic.categories);
-      images.push(...pic.images);
+      // Check if pic.categories is defined and iterable
+      if (pic.categories && typeof pic.categories[Symbol.iterator] === 'function') {
+        categories.push(...pic.categories);
+      }
+  
+      // Check if pic.images is defined and iterable
+      if (pic.images && typeof pic.images[Symbol.iterator] === 'function') {
+        images.push(...pic.images);
+      }
     });
-
+  
     setCategory(categories);
     setSnaps(images);
   }, [gallery]);
-
   // Filter images based on the selected category
   function handleClick(cat) {
     const filt = snaps.filter((p) => p.category === cat.name);

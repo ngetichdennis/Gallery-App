@@ -7,6 +7,7 @@ function AddForm({ onAddImage }) {
     image: "",
     description: "",
     date_added: new Date(),
+    category:"",
   });
   //handle input changes
   function handleChange(e) {
@@ -28,6 +29,7 @@ function AddForm({ onAddImage }) {
       image: "",
       description: "",
       date_added: new Date(),
+      category:"",
     });
     //posting data to the server
     fetch("http://localhost:3000/Gallery/images", {
@@ -39,11 +41,11 @@ function AddForm({ onAddImage }) {
     })
       .then((response) => response.json())
       .then((data) => {
-        
+
         console.log("Image added successfully", data);
       })
-      .catch((error) => {
-        console.error("Error posting image", error);
+           .catch((error) => {
+   console.error("Error posting image", error);
       });
   }
 
@@ -80,6 +82,14 @@ function AddForm({ onAddImage }) {
           type="date"
           value={formData.date_added.toISOString().slice(0, 10)}
           onChange={(e) => setFormData({ ...formData, date_added: new Date(e.target.value) })}
+          className="add-form"
+        />
+       <input
+          name="category"
+          type="text"
+          placeholder="Image category"
+          value={formData.category}
+          onChange={handleChange}
           className="add-form"
         />
         <button type="submit" className="add-form">

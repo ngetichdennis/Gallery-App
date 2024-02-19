@@ -5,7 +5,7 @@
         {
           "id": 1,
           "name": "House",
-          "image": "https://scontent-mba1-1.xx.fbcdn.net/v/t39.30808-6/319184656_884369396311044_4503920289257591806_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=173fa1&_nc_ohc=KjfLbNNrXK8AX-j_lGJ&_nc_ht=scontent-mba1-1.xx&oh=00_AfA1n3bXbMkhqP7eoTZaKEvokHmQr8GYnxFGAIXZ9MseFw&oe=65D06781",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf-iDNMSdb01NBFupoTal1S5KEVJZIEqiSRi-ial-8Ag&s",
           "description": "A modern house with a pool and a garden",
           "date_added": "2024-02-13",
           "category": "Architecture"
@@ -16,7 +16,7 @@
           "image": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*K98i7A929NyC3OkFQeVLcA.png",
           "description": "A white jet flying in the sky",
           "date_added": "2024-02-12",
-          "category": "Cars"
+          "category": "Others"
         },
         {
           "id": 3,
@@ -32,7 +32,7 @@
           "image": "https://images.unsplash.com/photo-1495360010541-f48722b34f7d?q=80&w=1336&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           "description": "A black and white cat lying on a sofa",
           "date_added": "2024-02-10",
-          "category": "Nature"
+          "category": "Animals"
         },
         {
           "id": 5,
@@ -64,7 +64,160 @@
           "image": "https://www.pablogiftshop.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-07-at-11.53.21-jpeg.webp",
           "description": "A silver watch with a black dial and a leather strap",
           "date_added": "2024-02-06",
-          "category": "Accessories"
+          "category": "Fashion"
+        },
+        {
+          "id": 9,
+          "name": "shoe",
+          "image": "https://pictures-nigeria.jijistatic.com/122328094_NjIwLTgyNy1lOWJlZjFkZDkz.webp",
+          "description": "A brown leather shoe with laces and a white sole",
+          "date_added": "2024-02-05",
+          "category": "Fashion"
+        },
+        {
+          "id": 10,
+          "name": "Hill",
+          "image": "https://images.unsplash.com/photo-1466940219795-c670f475e59f?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "A green hill with a cloudy sky",
+          "date_added": "2024-02-04",
+          "category": "Nature"
+        },
+        {
+          "id": 11,
+          "name": "Piano",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp-n5Rnm59UFg_4GqRFhqOO6PJleJcu-2XpQ&usqp=CAU",
+          "description": "A tall tree with green leaves and a blue sky",
+          "date_added": "2024-02-09",
+          "category": "Musical Instruments"
+        },
+        {
+          "id": 12,
+          "name": "Saxophone",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6DEm2tNAfFdB1HwPBGPq7zlLspX1cxVCcNg&usqp=CAU",
+          "description": "A blue BMW X6 M parked on a street",
+          "date_added": "2024-02-08",
+          "category": "Musical Instruments"
+        },
+        {
+          "id": 13,
+          "name": "starter",
+          "image": "https://images.unsplash.com/photo-1626200419537-f07108a01aac?q=80&w=2124&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": " Interesting varieties of foods that are eaten before the main meal",
+          "date_added": "2024-02-07",
+          "category": "Food"
+        },
+        {
+          "id": 14,
+          "name": "Main",
+          "image": "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "The largest or most important part of a meal in which there are different parts served separately",
+          "date_added": "2024-02-06",
+          "category": "Food"
+        },
+        {
+          "id": 15,
+          "name": "Dessert",
+          "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "A usually sweeter course that concludes a meal.",
+          "date_added": "2024-02-05",
+          "category": "Food"
+        },
+        {
+          "id": 16,
+          "name": "Guiter",
+          "image": "https://www.studiobell.ca/assets/images/_header/Showcase-Guitars_web_1900x800.jpg",
+          "description": "A green hill with a cloudy sky",
+          "date_added": "2024-02-04",
+          "category": "Musical Instruments"
+        },
+        {
+          "id": 17,
+          "name": "Cool Dog",
+          "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "A young cool dog seated",
+          "date_added": "2024-02-09",
+          "category": "Animals"
+        },
+        {
+          "id": 18,
+          "name": "Lion",
+          "image": "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "A lion in the park with the  sun shining down on it.",
+          "date_added": "2024-02-08",
+          "category": "Animals"
+        },
+        {
+          "id": 19,
+          "name": "Dolphin",
+          "image": "https://images.unsplash.com/photo-1591706083700-cf05c6be75e2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "A Dolphin  swimming.",
+          "date_added": "2024-02-07",
+          "category": "Animals"
+        },
+        {
+          "id": 20,
+          "name": "Hyena",
+          "image": "https://media.gettyimages.com/id/104381147/photo/close-shot-of-a-hyena-standing.jpg?s=612x612&w=gi&k=20&c=wVItzodt1Kjcbj5jkEpYEYk7Zwo4aBqbsYuxyuiRHDw=",
+          "description": "A hyena hunting",
+          "date_added": "2024-02-06",
+          "category": "Animals"
+        },
+        {
+          "id": 21,
+          "name": "Soccer",
+          "image": "https://www.electricireland.com/images/folder/homepage-spotlights/benefits-0.jpg?sfvrsn=bc86ba0d_2",
+          "description": "Women playing soccer ",
+          "date_added": "2024-02-05",
+          "category": "Sports"
+        },
+        {
+          "id": 22,
+          "name": "Tall Building",
+          "image": "https://images.unsplash.com/photo-1708201354289-63be47c13eb3?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "A green hill with a cloudy sky",
+          "date_added": "2024-02-04",
+          "category": "Architecture"
+        }
+        ,
+        {
+          "id": 23,
+          "name": "Sydney Opera",
+          "image": "https://www.artst.org/wp-content/uploads/2022/07/sydney-opera-house.jpg",
+          "description": "A scenic place in Australia",
+          "date_added": "2024-02-10",
+          "category": "Architecture"
+        },
+        {
+          "id": 24,
+          "name": "iphone",
+          "image": "https://images.unsplash.com/photo-1609692814858-f7cd2f0afa4f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "description": "A tall tree with green leaves and a blue sky",
+          "date_added": "2024-02-09",
+          "category": "Electronics/Gadgets"
+        },
+        {
+          "id": 6,
+          "name": "BMW",
+          "image": "https://www.wardsauto.com/sites/wardsauto.com/files/BMW%20X6%20M.jpg",
+          "description": "A blue BMW X6 M parked on a street",
+          "date_added": "2024-02-08",
+          "category": "Cars"
+        },
+        {
+          "id": 7,
+          "name": "Beach",
+          "image": "https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQj03S23J2gCxSsTwyaCeMw3u6-B36vGDZ9voA0v5lsuafmqV2LHkxjhKJsLg_deStIwWl1yloRGTA4VLxtrxQ",
+          "description": "A sunny beach with palm trees and people",
+          "date_added": "2024-02-07",
+          "category": "Nature"
+        },
+        {
+          "id": 8,
+          "name": "watch",
+          "image": "https://www.pablogiftshop.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-07-at-11.53.21-jpeg.webp",
+          "description": "A silver watch with a black dial and a leather strap",
+          "date_added": "2024-02-06",
+          "category": "Fashion"
         },
         {
           "id": 9,
@@ -101,23 +254,40 @@
         },
         {
           "id": 4,
-          "name": "Accessories",
-          "image": "https://img.freepik.com/premium-photo/top-view-contrast-male-female-accessories_274234-16448.jpg?w=1380"
+          "name": "Animals",
+          "image": "https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         },
         {
           "id": 5,
           "name": "Cars",
           "image": "https://images.unsplash.com/photo-1541443131876-44b03de101c5?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "id": 6,
+          "name": "Sports",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo7ZATpv_RKUePc7JnGoRh_7Zj5Wi_jz3Snw&usqp=CAU"
+        },
+        {
+          "id": 7,
+          "name": "Electronics/Gadgets",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKI1KbR09pnz2E_V27LopU8Rl4EN1J4QNlvQ&usqp=CAU"
+        },
+        {
+          "id": 8,
+          "name": "Food",
+          "image": "https://images.unsplash.com/photo-1535473895227-bdecb20fb157?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        },
+        {
+          "id": 9,
+          "name": "Musical Instruments",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfM6oR7qX1ogMJEmo7U2AgzqJJWe2bfDTTregRWmAFUgHdeH90qdfdBDZFv5yS-ntOvng&usqp=CAU"
+        },
+        {
+          "id": 10,
+          "name": "Others",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbJfRyznGzDNcF_zYzuf8rg1DJ9Be0cnY86LwOWoyLrg&s"
         }
       ]
-    },
-    {
-      "id": 1,
-      "name": "dennis",
-      "image": "https://images.unsplash.com/photo-1516416715870-0e59baaef47a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "fine",
-      "date_added": "2024-02-16",
-      "category": "Cars"
     },
     {
       "id": "fec810d1-3a93-4e4f-8514-5fef4140a985",
@@ -145,14 +315,6 @@
     },
     {
       "id": "acf07344-4bcf-4c1d-9081-ed333995b05c",
-      "name": "building",
-      "image": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "description": "tall building",
-      "date_added": "2024-02-16",
-      "category": "Architecture"
-    },
-    {
-      "id": "7565bfa9-1ec5-49ef-aaf5-6f2c08b92ae8",
       "name": "building",
       "image": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "description": "tall building",

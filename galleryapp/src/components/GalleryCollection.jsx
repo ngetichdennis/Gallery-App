@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
-import AddForm from "./AddForm";
+// import AddForm from "./AddForm";
 import SearchBar from "./SearchBar";
+import {Heading,Box,Text,Card,Stack,CardBody,CardFooter,ButtonGroup,Button,Divider,Image} from  "@chakra-ui/react"
+import InitialFocus from  './InitialFocus'
 
 
 function GalleryCollection({ gallery }) {
@@ -55,9 +57,12 @@ function GalleryCollection({ gallery }) {
   return (
     <div>
           <div className="search-bar">
+          <InitialFocus onAddImage={handleAddImage}/>
         <SearchBar onSearch={handleSearch} />
       </div>
-      <h2 className="category-header">Categories</h2>
+      <Box marginTop="2.5rem">
+      <Heading className="category-header" marginBottom="1.5rem">Categories</Heading>
+
       <div className="display">
         {category.map((cat) => {
           return (
@@ -66,25 +71,44 @@ function GalleryCollection({ gallery }) {
               : ""
           }`}>
               <img src={cat.image} alt="categories" />
-              <h4>{cat.name}</h4>
+              <Text fontSize="xl">{cat.name}</Text>
             </div>
           );
         })}
       </div>
-   
+      <Box marginTop="3.5rem">
       <div className="all-images">
         {filteredGallery.map((gal) => {
           return (
-            <div key={gal.id} className="category-image">
-              <img src={gal.image} alt="image" />
-              <h5>{gal.name}</h5>
-              <p>{gal.description}</p>
-              <p>Date added: {gal.date_added}</p>
-            </div>
+            <Card maxW='sm'key={gal.id} >
+  <CardBody >
+    <Image
+      src={gal.image}
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+      width={"400px"}
+      height={"400px"}
+      objectFit={"cover"}
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>{gal.name}</Heading>
+      <Text>
+        {gal.description}
+      </Text>
+      <Text color='blue.600' fontSize='2xl'>
+      Date Added:{gal.date_added}
+      </Text>
+    </Stack>
+  </CardBody>
+</Card>
+
           );
         })}
       </div>
-      <AddForm onAddImage={handleAddImage} />
+      </Box>
+      </Box>
+      
+     
     </div>
   );
 }

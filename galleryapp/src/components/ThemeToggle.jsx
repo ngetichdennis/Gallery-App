@@ -17,6 +17,7 @@ const ThemeToggle = () => {
         isChecked={colorMode === 'dark'}
         onChange={toggleColorMode}
         marginLeft={1400}
+        marginTop={"-5rem"}
       />
       {/* Button to toggle light mode specifically */}
       

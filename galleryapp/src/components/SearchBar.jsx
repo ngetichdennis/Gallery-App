@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {Input,Button} from '@chakra-ui/react';
+
 //function to handle searchBar
 function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -14,13 +16,13 @@ function SearchBar({ onSearch }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <Input width="94%"
         type="text"
         placeholder="Search for images..."
         value={searchTerm}
         onChange={handleChange}
       />
-      <button type="submit">Search</button>
+      <Button bg="#96CDFF" type="submit">Search</Button>
     </form>
   );
 }

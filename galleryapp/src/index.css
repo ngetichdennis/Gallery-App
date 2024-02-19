@@ -54,6 +54,7 @@
 .display {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 10rem;
 }
 
 .image-container img {

@@ -80,7 +80,7 @@ function InitialFocus({onAddImage}) {
 
   return (
     < >
-      <Button onClick={onOpen} marginLeft={"91%"} marginTop={"-7.1rem"} bg={"#F08080"}>ADD IMAGE</Button>
+      <Button onClick={onOpen} marginLeft={"91%"} marginTop={"-7.1rem"} bg={"#F08080"} >ADD IMAGE</Button>
       {/* <Button ml={4} ref={finalRef}>
         I'll receive focus on close
       </Button> */}

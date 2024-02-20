@@ -194,46 +194,6 @@
           "description": "A tall tree with green leaves and a blue sky",
           "date_added": "2024-02-09",
           "category": "Electronics/Gadgets"
-        },
-        {
-          "id": 6,
-          "name": "BMW",
-          "image": "https://www.wardsauto.com/sites/wardsauto.com/files/BMW%20X6%20M.jpg",
-          "description": "A blue BMW X6 M parked on a street",
-          "date_added": "2024-02-08",
-          "category": "Cars"
-        },
-        {
-          "id": 7,
-          "name": "Beach",
-          "image": "https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQj03S23J2gCxSsTwyaCeMw3u6-B36vGDZ9voA0v5lsuafmqV2LHkxjhKJsLg_deStIwWl1yloRGTA4VLxtrxQ",
-          "description": "A sunny beach with palm trees and people",
-          "date_added": "2024-02-07",
-          "category": "Nature"
-        },
-        {
-          "id": 8,
-          "name": "watch",
-          "image": "https://www.pablogiftshop.com/wp-content/uploads/2024/02/WhatsApp-Image-2024-02-07-at-11.53.21-jpeg.webp",
-          "description": "A silver watch with a black dial and a leather strap",
-          "date_added": "2024-02-06",
-          "category": "Fashion"
-        },
-        {
-          "id": 9,
-          "name": "shoe",
-          "image": "https://pictures-nigeria.jijistatic.com/122328094_NjIwLTgyNy1lOWJlZjFkZDkz.webp",
-          "description": "A brown leather shoe with laces and a white sole",
-          "date_added": "2024-02-05",
-          "category": "Fashion"
-        },
-        {
-          "id": 10,
-          "name": "Hill",
-          "image": "https://images.unsplash.com/photo-1466940219795-c670f475e59f?q=80&w=2016&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "description": "A green hill with a cloudy sky",
-          "date_added": "2024-02-04",
-          "category": "Nature"
         }
       ],
       "categories": [

@@ -62,7 +62,7 @@ function GalleryCollection({ gallery }) {
       </div>
       <Box marginTop="2.5rem">
       <Heading className="category-header" marginBottom="1.5rem">Categories</Heading>
-
+      {/* <Box width={{ base: "100vw", sm: "20vw", md: "90vw",lg:"100vw",xl:"100vw"}} height={{ base: "100vw", sm: "20vw", md: "90vw",lg:"100vw",xl:"100vw"}}> */}
       <div className="display">
         {category.map((cat) => {
           return (
@@ -76,6 +76,7 @@ function GalleryCollection({ gallery }) {
           );
         })}
       </div>
+      {/* </Box> */}
       <Box marginTop="3.5rem">
       <div className="all-images">
         {filteredGallery.map((gal) => {

@@ -80,7 +80,11 @@ function InitialFocus({onAddImage}) {
 
   return (
     < >
+<<<<<<< HEAD
       <Button onClick={onOpen} marginLeft={"91%"} marginTop={"-7.1rem"} bg={"#F08080"} >ADD IMAGE</Button>
+=======
+      <Button onClick={onOpen} marginLeft={{base:'240%', sm:'150%', md:'125%', lg:'92%', xl:"92%"}} marginTop={"-7.1rem"} bg={"#F08080"} width={{ base: "110px", sm: "110px", md: "110px",lg:"100px",xl:"100px"}} height={{ base: "40px", sm: "40px", md: "40px",lg:"40px",xl:"40px"}}>ADD IMAGE</Button>
+>>>>>>> af1a3a8 (modified db.json)
       {/* <Button ml={4} ref={finalRef}>
         I'll receive focus on close
       </Button> */}
